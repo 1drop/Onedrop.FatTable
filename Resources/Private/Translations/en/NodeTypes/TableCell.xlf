@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file original="" product-name="Onedrop.FatTable" source-language="en" datatype="plaintext">
+        <body>
+            <trans-unit id="ui.label" xml:space="preserve">
+                <source>Table cell</source>
+            </trans-unit>
+            <trans-unit id="groups.tableCell" xml:space="preserve">
+                <source>Table cell</source>
+            </trans-unit>
+            <trans-unit id="properties.rowSpan" xml:space="preserve">
+                <source>Rowspan</source>
+            </trans-unit>
+            <trans-unit id="properties.colSpan" xml:space="preserve">
+                <source>Colspan</source>
+            </trans-unit>
+            <trans-unit id="properties.horizontalCenter" xml:space="preserve">
+                <source>Center content horizontally</source>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

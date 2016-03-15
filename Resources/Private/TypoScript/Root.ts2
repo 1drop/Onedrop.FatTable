@@ -1,0 +1,59 @@
+prototype(Onedrop.FatTable:Table) {
+    attributes.id = ${q(node).property('name')}
+    attributes.class = 'table'
+    rowCount = ${q(node).children('rows').children('[instanceof Onedrop.FatTable:TableRow]').count()}
+    rows = ContentCollection {
+        tagName = 'table'
+        nodePath = 'rows'
+        attributes {
+            id = ${q(node).parent().property('name')}
+            class = TYPO3.TypoScript:Array {
+                table = 'table '
+                bordered = 'table-bordered '
+                bordered.@if.condition = ${q(node).parent().property('bordered') == true}
+                striped = 'table-striped '
+                striped.@if.condition = ${q(node).parent().property('striped') == true}
+                hover = 'table-hover '
+                hover.@if.condition = ${q(node).parent().property('hover') == true}
+                condensed = 'table-condensed '
+                condensed.@if.condition = ${q(node).parent().property('condensed') == true}
+                responsive = 'table-responsive '
+                responsive.@if.condition = ${q(node).parent().property('responsive') == true}
+                @process.collectionClass >
+            }
+        }
+    }
+}
+
+prototype(Onedrop.FatTable:TableRow) {
+    cellCount = ${q(node).children('cells').children('[instanceof Onedrop.FatTable:TableCell]').count()}
+    cells = ContentCollection {
+        tagName = 'tr'
+        nodePath = 'cells'
+        attributes {
+            class = TYPO3.TypoScript:Array {
+                row = 'row '
+                @process.collectionClass >
+                background = ${q(node).parent().property('background') + ' '}
+                background.@if.condition = ${q(node).parent().property('background') != ''}
+            }
+        }
+    }
+}
+
+prototype(Onedrop.FatTable:TableCell) {
+    main = ContentCollection {
+        tagName = 'td'
+        nodePath = 'main'
+        attributes {
+            class = TYPO3.TypoScript:Array {
+                cell = 'cell '
+                @process.collectionClass >
+                alignment = ${'text-' + q(node).parent().property('alignment') + ' '}
+                alignment.@if.condition = ${q(node).parent().property('alignment') != ''}
+            }
+            rowspan = ${q(node).parent().property('rowSpan')}
+            colspan = ${q(node).parent().property('colSpan')}
+        }
+    }
+}

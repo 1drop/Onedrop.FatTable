@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file original="" product-name="Onedrop.FatTable" source-language="en" datatype="plaintext">
+        <body>
+            <trans-unit id="ui.label" xml:space="preserve">
+                <source>Table row</source>
+            </trans-unit>
+            <trans-unit id="groups.tableRow" xml:space="preserve">
+                <source>Table row</source>
+            </trans-unit>
+            <trans-unit id="properties.background" xml:space="preserve">
+                <source>Background</source>
+            </trans-unit>
+            <trans-unit id="properties.background.selectBoxEditor.values.active" xml:space="preserve">
+                <source>Active</source>
+            </trans-unit>
+            <trans-unit id="properties.background.selectBoxEditor.values.success" xml:space="preserve">
+                <source>Success</source>
+            </trans-unit>
+            <trans-unit id="properties.background.selectBoxEditor.values.warning" xml:space="preserve">
+                <source>Warning</source>
+            </trans-unit>
+            <trans-unit id="properties.background.selectBoxEditor.values.danger" xml:space="preserve">
+                <source>Danger</source>
+            </trans-unit>
+            <trans-unit id="properties.background.selectBoxEditor.values.info" xml:space="preserve">
+                <source>Info</source>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

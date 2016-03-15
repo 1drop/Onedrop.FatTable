@@ -1,0 +1,10 @@
+{namespace neos=TYPO3\Neos\ViewHelpers}
+{namespace ts=TYPO3\TypoScript\ViewHelpers}
+<f:if condition="{rowCount} > 0">
+    <f:then>
+        {rows -> f:format.raw()}
+    </f:then>
+    <f:else>
+        <f:translate source="Main" package="Onedrop.FatTable" id="noRows" />
+    </f:else>
+</f:if>

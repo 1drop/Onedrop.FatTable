@@ -1,0 +1,36 @@
+---
+'Onedrop.FatTable:TableCell':
+  superTypes:
+    'TYPO3.Neos:Content': TRUE
+    'TYPO3.Neos.NodeTypes:ImageAlignmentMixin': TRUE
+  childNodes:
+    main:
+      type: 'TYPO3.Neos:ContentCollection'
+  ui:
+    label: i18n
+    icon: 'icon-table'
+    inspector:
+      groups:
+        tableCell:
+          label: i18n
+          position: 10
+  properties:
+    rowSpan:
+      type: integer
+      defaultValue: 1
+      ui:
+        label: i18n
+        inspector:
+          group: tableCell
+    colSpan:
+      type: integer
+      defaultValue: 1
+      ui:
+        label: i18n
+        inspector:
+          group: tableCell
+    alignment:
+      defaultValue: 'left'
+      ui:
+        inspector:
+          group: tableCell
