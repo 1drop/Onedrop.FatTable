@@ -12,6 +12,7 @@
   ui:
     label: i18n
     icon: 'icon-table'
+    inlineEditable: TRUE
     inspector:
       groups:
         tableRow:

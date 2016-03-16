@@ -19,7 +19,6 @@ prototype(Onedrop.FatTable:Table) {
                 condensed.@if.condition = ${q(node).parent().property('condensed') == true}
                 responsive = 'table-responsive '
                 responsive.@if.condition = ${q(node).parent().property('responsive') == true}
-                @process.collectionClass >
             }
         }
     }
@@ -33,7 +32,6 @@ prototype(Onedrop.FatTable:TableRow) {
         attributes {
             class = TYPO3.TypoScript:Array {
                 row = 'row '
-                @process.collectionClass >
                 background = ${q(node).parent().property('background') + ' '}
                 background.@if.condition = ${q(node).parent().property('background') != ''}
             }
@@ -42,18 +40,16 @@ prototype(Onedrop.FatTable:TableRow) {
 }
 
 prototype(Onedrop.FatTable:TableCell) {
-    main = ContentCollection {
-        tagName = 'td'
-        nodePath = 'main'
-        attributes {
-            class = TYPO3.TypoScript:Array {
-                cell = 'cell '
-                @process.collectionClass >
-                alignment = ${'text-' + q(node).parent().property('alignment') + ' '}
-                alignment.@if.condition = ${q(node).parent().property('alignment') != ''}
-            }
-            rowspan = ${q(node).parent().property('rowSpan')}
-            colspan = ${q(node).parent().property('colSpan')}
+    attributes {
+        class = TYPO3.TypoScript:Array {
+            cell = 'cell '
+            alignment = ${'text-' + q(node).property('alignment') + ' '}
+            alignment.@if.condition = ${q(node).property('alignment') != ''}
         }
+        rowspan = ${q(node).property('rowSpan')}
+        colspan = ${q(node).property('colSpan')}
+    }
+    main = ContentCollection {
+        nodePath = 'main'
     }
 }

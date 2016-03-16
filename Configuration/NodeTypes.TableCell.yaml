@@ -9,6 +9,7 @@
   ui:
     label: i18n
     icon: 'icon-table'
+    inlineEditable: TRUE
     inspector:
       groups:
         tableCell:
@@ -20,6 +21,7 @@
       defaultValue: 1
       ui:
         label: i18n
+        reloadIfChanged: true
         inspector:
           group: tableCell
     colSpan:
@@ -27,10 +29,12 @@
       defaultValue: 1
       ui:
         label: i18n
+        reloadIfChanged: true
         inspector:
           group: tableCell
     alignment:
       defaultValue: 'left'
       ui:
+        reloadIfChanged: true
         inspector:
           group: tableCell
