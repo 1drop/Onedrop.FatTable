@@ -11,3 +11,13 @@ It's currently optimized to have table, row and cell properties and functionalit
 
 Use the command ``composer require onedrop/fattable`` to add this package as a requirement to your Neos project.  
 (Or: Download the zip and unpack it to ``Packages/Application/Onedrop.FatTable``)
+
+### Usage:
+
+Just place the new table NodeType anywhere and add TableRows inside the table and TableCells inside the rows. 
+Inside the TableCells you can use any content you like.
+
+## Future improvements:
+
+- Provide an easy way to bootstrap a table (row, column config) and to quickly add and remove rows and cols
+- Make TableRow and TableCell nodeType only visible inside the expected ContentCollection (currently global visible)
