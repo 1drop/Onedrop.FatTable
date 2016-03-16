@@ -2,6 +2,7 @@
     "name": "onedrop/fattable",
     "type": "typo3-flow-package",
     "description": "Provides NodeType based HTML-tables for Neos",
+    "license": ["MIT"],
     "require": {
         "typo3/neos": "~2.0"
     },
