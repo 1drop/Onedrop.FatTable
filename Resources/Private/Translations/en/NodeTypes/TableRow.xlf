@@ -6,7 +6,7 @@
                 <source>Table row</source>
             </trans-unit>
             <trans-unit id="groups.tableRow" xml:space="preserve">
-                <source>Table row</source>
+                <source>Table row properties</source>
             </trans-unit>
             <trans-unit id="properties.background" xml:space="preserve">
                 <source>Background</source>

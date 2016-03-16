@@ -6,7 +6,7 @@
                 <source>Table</source>
             </trans-unit>
             <trans-unit id="groups.table" xml:space="preserve">
-                <source>Table</source>
+                <source>Table properties</source>
             </trans-unit>
             <trans-unit id="properties.name" xml:space="preserve">
                 <source>Name (id)</source>
