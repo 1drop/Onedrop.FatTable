@@ -4,5 +4,10 @@
     "description": "Provides NodeType based HTML-tables for Neos",
     "require": {
         "typo3/neos": "~2.0"
+    },
+    "autoload": {
+        "psr-0": {
+            "Onedrop\\FatTable": "Classes"
+        }
     }
 }
