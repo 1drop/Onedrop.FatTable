@@ -3,11 +3,11 @@
     "type": "neos-package",
     "description": "Provides NodeType based HTML-tables for Neos",
     "require": {
-        "neos/neos": "~3.0 || dev-master"
+        "neos/neos": "~3.0"
     },
     "autoload": {
-        "psr-0": {
-            "Onedrop\\FatTable": "Classes"
+        "psr-4": {
+            "Onedrop\\FatTable\\": "Classes"
         }
     },
     "extra": {
