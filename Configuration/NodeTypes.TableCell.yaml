@@ -1,15 +1,15 @@
----
+
 'Onedrop.FatTable:TableCell':
   superTypes:
-    'TYPO3.Neos:Content': TRUE
-    'TYPO3.Neos.NodeTypes:ImageAlignmentMixin': TRUE
+    'Neos.Neos:Content': true
+    'Neos.NodeTypes:ImageAlignmentMixin': true
   childNodes:
     main:
-      type: 'TYPO3.Neos:ContentCollection'
+      type: 'Neos.Neos:ContentCollection'
   ui:
     label: i18n
-    icon: 'icon-table'
-    inlineEditable: TRUE
+    icon: icon-table
+    inlineEditable: true
     inspector:
       groups:
         tableCell:
@@ -33,7 +33,7 @@
         inspector:
           group: tableCell
     alignment:
-      defaultValue: 'left'
+      defaultValue: left
       ui:
         reloadIfChanged: true
         inspector:

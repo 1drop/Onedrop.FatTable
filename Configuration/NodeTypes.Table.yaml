@@ -1,11 +1,11 @@
----
+
 'Onedrop.FatTable:Table':
   superTypes:
-    'TYPO3.Neos:Content': TRUE
+    'Neos.Neos:Content': true
   ui:
     label: i18n
-    icon: 'icon-table'
-    inlineEditable: TRUE
+    icon: icon-table
+    inlineEditable: true
     inspector:
       groups:
         table:
@@ -13,15 +13,15 @@
           position: 10
   childNodes:
     rows:
-      type: 'TYPO3.Neos:ContentCollection'
+      type: 'Neos.Neos:ContentCollection'
       constraints:
         nodeTypes:
-          'Onedrop.FatTable:TableRow': TRUE
-          '*': FALSE
+          'Onedrop.FatTable:TableRow': true
+          '*': false
   properties:
     name:
       type: string
-      defaultValue: 'a-table'
+      defaultValue: a-table
       reloadIfChanged: true
       ui:
         label: i18n
@@ -34,7 +34,7 @@
         label: i18n
         inspector:
           group: table
-          editor: 'TYPO3.Neos/Inspector/Editors/SelectBoxEditor'
+          editor: Neos.Neos/Inspector/Editors/SelectBoxEditor
           editorOptions:
             placeholder: i18n
             defaultValue: ''

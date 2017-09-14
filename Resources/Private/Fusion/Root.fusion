@@ -7,7 +7,7 @@ prototype(Onedrop.FatTable:Table) {
         nodePath = 'rows'
         attributes {
             id = ${q(node).parent().property('name')}
-            class = TYPO3.TypoScript:Array {
+            class = Neos.Fusion:Array {
                 table = 'table '
                 bordered = 'table-bordered '
                 bordered.@if.condition = ${q(node).parent().property('bordered') == true}
@@ -30,7 +30,7 @@ prototype(Onedrop.FatTable:TableRow) {
         tagName = 'tr'
         nodePath = 'cells'
         attributes {
-            class = TYPO3.TypoScript:Array {
+            class = Neos.Fusion:Array {
                 row = 'row '
                 background = ${q(node).parent().property('background') + ' '}
                 background.@if.condition = ${q(node).parent().property('background') != ''}
@@ -41,7 +41,7 @@ prototype(Onedrop.FatTable:TableRow) {
 
 prototype(Onedrop.FatTable:TableCell) {
     attributes {
-        class = TYPO3.TypoScript:Array {
+        class = Neos.Fusion:Array {
             cell = 'cell '
             alignment = ${'text-' + q(node).property('alignment') + ' '}
             alignment.@if.condition = ${q(node).property('alignment') != ''}
