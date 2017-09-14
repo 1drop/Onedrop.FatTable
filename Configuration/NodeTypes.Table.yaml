@@ -1,7 +1,7 @@
 
 'Onedrop.FatTable:Table':
   superTypes:
-    'TYPO3.Neos:Content': true
+    'Neos.Neos:Content': true
   ui:
     label: i18n
     icon: icon-table
@@ -13,7 +13,7 @@
           position: 10
   childNodes:
     rows:
-      type: 'TYPO3.Neos:ContentCollection'
+      type: 'Neos.Neos:ContentCollection'
       constraints:
         nodeTypes:
           'Onedrop.FatTable:TableRow': true
@@ -34,7 +34,7 @@
         label: i18n
         inspector:
           group: table
-          editor: TYPO3.Neos/Inspector/Editors/SelectBoxEditor
+          editor: Neos.Neos/Inspector/Editors/SelectBoxEditor
           editorOptions:
             placeholder: i18n
             defaultValue: ''

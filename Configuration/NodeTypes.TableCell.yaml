@@ -1,11 +1,11 @@
 
 'Onedrop.FatTable:TableCell':
   superTypes:
-    'TYPO3.Neos:Content': true
+    'Neos.Neos:Content': true
     'Neos.NodeTypes:ImageAlignmentMixin': true
   childNodes:
     main:
-      type: 'TYPO3.Neos:ContentCollection'
+      type: 'Neos.Neos:ContentCollection'
   ui:
     label: i18n
     icon: icon-table
