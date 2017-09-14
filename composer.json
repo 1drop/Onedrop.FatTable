@@ -1,9 +1,9 @@
 {
     "name": "onedrop/fattable",
-    "type": "typo3-flow-package",
+    "type": "neos-package",
     "description": "Provides NodeType based HTML-tables for Neos",
     "require": {
-        "typo3/neos": "~2.0"
+        "neos/neos": "~3.0 || dev-master"
     },
     "autoload": {
         "psr-0": {
