@@ -1,11 +1,11 @@
 
 Neos:
   Neos:
-    typoScript:
-      autoInclude:
-        Onedrop.FatTable: true
     userInterface:
       translation:
         autoInclude:
           Onedrop.FatTable:
             - 'NodeTypes/*'
+    fusion:
+      autoInclude:
+        Onedrop.FatTable: true
