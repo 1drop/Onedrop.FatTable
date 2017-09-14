@@ -2,7 +2,7 @@
 'Onedrop.FatTable:TableCell':
   superTypes:
     'TYPO3.Neos:Content': true
-    'TYPO3.Neos.NodeTypes:ImageAlignmentMixin': true
+    'Neos.NodeTypes:ImageAlignmentMixin': true
   childNodes:
     main:
       type: 'TYPO3.Neos:ContentCollection'
