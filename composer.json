@@ -9,5 +9,10 @@
         "psr-0": {
             "Onedrop\\FatTable": "Classes"
         }
+    },
+    "extra": {
+        "applied-flow-migrations": [
+            "TYPO3.FLOW3-201201261636"
+        ]
     }
 }
